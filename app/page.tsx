@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 export default function Home() {
   return (
-    <div className="min-h-[80vh] flex flex-col items-center justify-center space-y-8">
+    <div className="min-h-[80vh] flex flex-col items-center justify-center space-y-8 px-4 sm:px-6 lg:px-8">
       <div className="text-center space-y-4">
         <Palette className="w-24 h-24 mx-auto text-primary" />
         <h1 className="text-4xl font-bold tracking-tighter sm:text-6xl">
@@ -16,14 +16,14 @@ export default function Home() {
         </p>
       </div>
       
-      <div className="flex gap-4">
+      <div className="flex flex-col sm:flex-row gap-4">
         <Link href="/create">
-          <Button size="lg" className="text-lg">
+          <Button size="lg" className="text-lg w-full sm:w-auto">
             Start Creating
           </Button>
         </Link>
         <Link href="/gallery">
-          <Button size="lg" variant="outline" className="text-lg">
+          <Button size="lg" variant="outline" className="text-lg w-full sm:w-auto">
             View Gallery
           </Button>
         </Link>

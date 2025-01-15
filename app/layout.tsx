@@ -19,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={inter.className}>
+      <body className={`${inter.className} bg-gradient-to-r from-background-start to-background-end`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
@@ -27,7 +27,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Navigation />
-          <main className="container mx-auto px-4 py-8">
+          <main className="container mx-auto px-4 py-8 responsive-container">
             {children}
           </main>
           <Toaster />
